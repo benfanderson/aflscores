@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 function GameTile(props) {
   const { game } = props;
+  const gameTime = moment(game.date + game.tz).format('dddd, MMMM D h:mma');
   return (
     <div className="gameTile">
       {game.hteam}
@@ -21,7 +23,7 @@ function GameTile(props) {
       {' '}
       on
       {' '}
-      {game.date}
+      {gameTime}
     </div>
   );
 }

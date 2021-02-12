@@ -25,9 +25,8 @@ function ClubGames(props) {
           <h2>{id}</h2>
           <div>
             {
-            roundArray.map((game, index) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <GameTile key={index} game={game} />
+            roundArray.map((game) => (
+              <GameTile key={game.id} game={game} />
             ))
             }
           </div>
