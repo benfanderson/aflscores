@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import clubLogo from '../clubLogo';
+import clubLogo from '../club_logo';
 
 function GameTile(props) {
   const { game } = props;
