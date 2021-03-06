@@ -10,11 +10,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: rgb(223, 230, 243);
+    width: 96%;
+    margin: auto;
   }
   
   .container {
-    width: 96%;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: 2%;
   }
 
   .littleButton {

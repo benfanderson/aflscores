@@ -7,8 +7,8 @@ function Front() {
 
   return (
     <div className={styles.container}>
-      <button type="button" onClick={() => history.push('rounds')}>Games by round</button>
-      <button type="button" onClick={() => history.push('clubs')}>Games by club</button>
+      <button className={styles.littleButton} type="button" onClick={() => history.push('rounds')}>Games by round</button>
+      <button className={styles.littleButton} type="button" onClick={() => history.push('clubs')}>Games by club</button>
     </div>
   );
 }

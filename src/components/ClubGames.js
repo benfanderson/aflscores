@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import GameTile from './GameTile';
-import styles from '../../public/styles.css';
+// import styles from '../../public/styles.css';
 
 function ClubGames(props) {
   const { games } = props;
@@ -22,7 +22,7 @@ function ClubGames(props) {
   return (
     roundArray.length > 0
       ? (
-        <div className={styles.container}>
+        <div>
           <h2>{id}</h2>
           <div>
             {
