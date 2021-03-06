@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import styles from '../../public/styles.css';
 
 function Rounds() {
   const rounds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
@@ -7,9 +8,9 @@ function Rounds() {
   const history = useHistory();
 
   return (
-    <div>
+    <div className={styles.container}>
       {rounds.map((round) => (
-        <button type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
+        <button className={styles.littleButton} type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
           {`Round ${round}`}
         </button>
       ))}

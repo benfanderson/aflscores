@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import GameTile from './GameTile';
+import styles from '../../public/styles.css';
 
 function RoundGames(props) {
   const { games } = props;
@@ -22,7 +23,7 @@ function RoundGames(props) {
   return (
     roundArray.length > 0
       ? (
-        <>
+        <div className={styles.container}>
           <h2>
             {`Round ${roundNumber}`}
           </h2>
@@ -33,7 +34,7 @@ function RoundGames(props) {
             ))
             }
           </div>
-        </>
+        </div>
       )
       : <p>Loading  . . .</p>
   );
