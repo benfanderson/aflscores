@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import styles from '../../public/styles.css';
 import GameTile from './GameTile';
 import createTitle from '../create_title';
+import Footer from './footer';
 
 function RoundGames(props) {
   const { games } = props;
@@ -33,6 +34,7 @@ function RoundGames(props) {
             ))
             }
           </div>
+          <Footer />
         </div>
       )
       : <p>Loading  . . .</p>

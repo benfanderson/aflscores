@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import GameTile from './GameTile';
 import styles from '../../public/styles.css';
 import createTitle from '../create_title';
+import Footer from './footer';
 
 function ClubGames(props) {
   const { games } = props;
@@ -32,6 +33,7 @@ function ClubGames(props) {
             ))
             }
           </div>
+          <Footer />
         </div>
       )
       : <p>Loading  . . .</p>
