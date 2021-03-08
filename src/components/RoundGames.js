@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
+import styles from '../../public/styles.css';
 import GameTile from './GameTile';
 import createTitle from '../create_title';
 
@@ -25,7 +26,7 @@ function RoundGames(props) {
       ? (
         <div>
           <h2>{createTitle(roundNumber)}</h2>
-          <div>
+          <div className={styles.gamesContainer}>
             {
             roundArray.map((game) => (
               <GameTile key={game.id} game={game} />

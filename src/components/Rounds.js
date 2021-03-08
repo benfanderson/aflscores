@@ -8,7 +8,7 @@ function Rounds() {
   const history = useHistory();
 
   return (
-    <div className={styles.container}>
+    <div className={styles.buttonContainer}>
       {rounds.map((round) => (
         <button className={styles.littleButton} type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
           {`Round ${round}`}

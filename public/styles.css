@@ -10,11 +10,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: rgb(223, 230, 243);
-    width: 96%;
+    width: 90%;
     margin: auto;
   }
   
-  .container {
+  .buttonContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
@@ -49,40 +49,47 @@
 	top:1px;
 }
 
-  .gameTile {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 2vh;
-    text-align: center;
+.gameTile {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 2vh;
+  text-align: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 1vw;
+}
+
+/*View for tablet*/
+@media only screen and (min-width: 479px) {
+  .buttonContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 29%);
+    grid-gap: 1rem;
     justify-content: space-between;
-    background-color: whitesmoke;
-    padding: 1vw;
   }
 
-  /*View for tablet*/
-  @media only screen and (min-width: 479px) {
-    .container{
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 29%);
-      grid-gap: 1rem;
-      justify-content: space-between;
-    }
-
-    .littleButton {
-      width: 100%;
-    } 
-    
+  .gamesContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 47.5%);
+    grid-gap: 1rem;
+    justify-content: space-between;
   }
 
-  /*View for desktop*/
-  @media only screen and (min-width: 1000px) {
-    .container{
-      grid-template-columns: repeat(auto-fill, 15%);
-      grid-gap: 1rem;
-    }
+  .littleButton {
+    width: 100%;
+  } 
+  
+}
 
-    .littleButton {
-      width: 100%;
-    } 
-    
+/*View for desktop*/
+@media only screen and (min-width: 1000px) {
+  .buttonContainer{
+    grid-template-columns: repeat(auto-fill, 15%);
   }
+
+
+  .gamesContainer{
+    grid-template-columns: repeat(auto-fill, 31%);
+  }
+  
+}
