@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
@@ -11,23 +12,9 @@ function GameTile(props) {
     <div className={styles.gameTile}>
       <img src={clubLogo(game.hteam)} alt={`${game.hteam} logo`} />
       <div className={styles.gameInfo}>
-        <p>
-          {game.hteam}
-          {' '}
-          {game.hscore}
-          {' '}
-          v
-          {' '}
-          {game.ateam}
-          {' '}
-          {game.ascore}
-        </p>
-        <p>
-          {game.venue}
-        </p>
-        <p>
-          {gameTime}
-        </p>
+        <p>{game.complete === 0 ? `${game.hteam} v ${game.ateam}` : `${game.hteam} ${game.hscore} ${game.ateam} ${game.hscore}` }</p>
+        <p>{game.venue}</p>
+        <p>{game.complete === 0 ? `${gameTime}` : game.complete < 100 ? <span className={styles.live}>LIVE</span> : null}</p>
       </div>
       <img src={clubLogo(game.ateam)} alt={`${game.ateam} logo`} />
     </div>

@@ -59,6 +59,13 @@
   padding: 1vw;
 }
 
+.live{
+  color: rgb(238, 86, 99);
+  /* animation: pulsate 1.5s ease-out;         
+  animation-iteration-count: infinite;
+  opacity: 0.5; */
+}
+
 /*View for tablet*/
 @media only screen and (min-width: 479px) {
   .buttonContainer{
