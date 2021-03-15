@@ -25,7 +25,7 @@ function RoundGames(props) {
   return (
     roundArray.length > 0
       ? (
-        <div>
+        <div className={styles.container}>
           <h2>{createTitle(roundNumber)}</h2>
           <div className={styles.gamesContainer}>
             {

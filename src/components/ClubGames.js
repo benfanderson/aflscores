@@ -22,16 +22,17 @@ function ClubGames(props) {
   );
 
   return (
+
     roundArray.length > 0
       ? (
-        <div>
+        <div className={styles.container}>
           <h2>{createTitle(id)}</h2>
           <div className={styles.gamesContainer}>
             {
-            roundArray.map((game) => (
-              <GameTile key={game.id} game={game} />
-            ))
-            }
+              roundArray.map((game) => (
+                <GameTile key={game.id} game={game} />
+              ))
+              }
           </div>
           <Footer />
         </div>
