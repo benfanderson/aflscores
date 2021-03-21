@@ -6,7 +6,8 @@ import RoundGames from './RoundGames';
 import ClubGames from './ClubGames';
 import Rounds from './Rounds';
 import Clubs from './Clubs';
-import styles from '../../public/styles.css';
+import Navbar from './Navbar';
+// import styles from '../../public/styles.css';
 
 const ENDPOINT = 'http://127.0.0.1:4001';
 
@@ -21,28 +22,24 @@ function App() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <>
       <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route exact path="/">
-            {' '}
             <Front />
           </Route>
           <Route exact path="/rounds">
-            {' '}
             <Rounds />
-            {' '}
           </Route>
           <Route exact path="/clubs">
-            {' '}
             <Clubs />
-            {' '}
           </Route>
           <Route path="/rounds/:id"><RoundGames games={liveScores} /></Route>
           <Route path="/clubs/:id"><ClubGames games={liveScores} /></Route>
         </Switch>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 
