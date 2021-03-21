@@ -34,19 +34,11 @@ body {
   text-decoration: underline;
 }
 
-.bigButtonContainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
-  margin-top: 2%;
-
-}
-
 .headline{
   text-align: center;
 }
 
-.buttonImg{
+.frontImg{
   width: 70%;
   margin: 2vh auto;
   display:block;
@@ -59,35 +51,8 @@ body {
   margin-top: 2%;
 }
 
-.bigButton {
-  width: 48%;
-  margin-bottom: 4%;
-  font-size: 1.3em;
-  box-shadow:inset 0px 1px 0px 0px #ffffff;
-  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-  background-color:#ffffff;
-  border-radius:6px;
-  border:1px solid #dcdcdc;
-  display:inline-block;
-  cursor:pointer;
-  color:#666666;
-  font-family:Arial;
-  font-weight:bold;
-  padding:10px 30px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #ffffff;
-}
 
-.bigButton:hover {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
-}
-.bigButton:active {
-	position:relative;
-	top:1px;
-}
-
-  .littleButton {
+.littleButton {
   width: 48%;
   margin-bottom: 4%;
   font-size: 1.3em;
@@ -140,8 +105,22 @@ body {
 /*View for tablet*/
 @media only screen and (min-width: 479px) {
 
-  .bigButton {
-    width: 30%;
+  .navbar {
+    padding: 0.75vh;
+  
+  }
+  
+  .navlink{
+    font-size: 1.3em;
+    padding: 0 2vw;
+  }
+
+  .headline{
+    font-size: 2.5em;
+  }
+  
+  .frontImg{
+    width: 50%;
   }
 
   .buttonContainer{
