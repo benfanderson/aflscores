@@ -17,6 +17,23 @@ body {
   margin: auto;
 }
 
+.navbar {
+  background-color: rgb(75, 75, 247);
+  height: 3vh;
+  padding: 1vh;
+
+}
+
+.navlink{
+  color: white;
+  text-decoration: none;
+  padding: 0 3vw;
+}
+
+.navlink:hover{
+  text-decoration: underline;
+}
+
 .bigButtonContainer{
   display: flex;
   flex-wrap: wrap;
@@ -25,9 +42,14 @@ body {
 
 }
 
+.headline{
+  text-align: center;
+}
+
 .buttonImg{
   width: 70%;
-  height: auto;
+  margin: 2vh auto;
+  display:block;
 }
 
 .buttonContainer {
@@ -108,6 +130,11 @@ body {
   animation: pulsate 1.5s ease-out;         
   animation-iteration-count: infinite;
   opacity: 0.5;
+}
+
+.footer{
+  text-align: center;
+  padding: 1vh 0;
 }
 
 /*View for tablet*/

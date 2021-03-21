@@ -10,7 +10,7 @@ function Front() {
 
   return (
     <div className={styles.container}>
-      <h1>AFL Live scores 2021</h1>
+      <h1 className={styles.headline}>AFL Live scores 2021</h1>
       <img src={player} className={styles.buttonImg} alt="Football player icon" />
       {/* <div className={styles.bigButtonContainer}>
         <button className={styles.bigButton} type="button" onClick={() => history.push('rounds')}>
