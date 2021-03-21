@@ -21,7 +21,7 @@ body {
   background-color: rgb(75, 75, 247);
   height: 3vh;
   padding: 1vh;
-
+  margin-bottom: 2.5vh;
 }
 
 .navlink{
@@ -49,6 +49,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-between; 
   margin-top: 2%;
+  margin-bottom: 1.5vh;
+}
+
+.gamesContainer{
+  margin-bottom: 1.5vh;
 }
 
 
@@ -107,7 +112,7 @@ body {
 
   .navbar {
     padding: 0.75vh;
-  
+    margin-bottom: 1.5vh;
   }
   
   .navlink{
@@ -147,8 +152,25 @@ body {
 /*View for desktop*/
 @media only screen and (min-width: 1000px) {
 
+  .navLinkContainer{
+    width: 93%;
+    margin:auto;
+  }
+
+  .navlink{
+    padding: 0 1vw;
+  }
+
   .container{
     width: 90%;
+  }
+
+  .headline{
+    font-size: 4em;
+  }
+  
+  .frontImg{
+    width: 40%;
   }
 
   .buttonContainer{

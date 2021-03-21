@@ -8,7 +8,7 @@ const Navbar = () => (
     aria-label="main navigation"
     className={styles.navbar}
   >
-    <div>
+    <div className={styles.navLinkContainer}>
       <NavLink
         to="/"
         className={styles.navlink}
