@@ -7,9 +7,8 @@ import ClubGames from './ClubGames';
 import Rounds from './Rounds';
 import Clubs from './Clubs';
 import Navbar from './Navbar';
-// import styles from '../../public/styles.css';
 
-const ENDPOINT = 'http://127.0.0.1:4001';
+const ENDPOINT = 'https://afl-server.herokuapp.com/';
 
 function App() {
   const [liveScores, setLiveScores] = useState('');
