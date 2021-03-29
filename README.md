@@ -30,7 +30,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com/) and [
 
 **Clone this repository**
 
-https://github.com/benfanderson/aflgames.git
+https://github.com/benfanderson/aflscores.git
 
 **Go into the repository**
 
