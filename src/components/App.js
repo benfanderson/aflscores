@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import socketIOClient from 'socket.io-client';
 import Front from './Front';
 import RoundGames from './RoundGames';
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -37,7 +37,7 @@ function App() {
           <Route path="/rounds/:id"><RoundGames games={liveScores} /></Route>
           <Route path="/clubs/:id"><ClubGames games={liveScores} /></Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
