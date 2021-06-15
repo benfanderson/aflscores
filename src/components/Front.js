@@ -7,7 +7,9 @@ function Front() {
   return (
     <div className={styles.container}>
       <h1 className={styles.headline}>AFL Live scores 2021</h1>
-      <img src={player} className={styles.frontImg} alt="Football player icon" />
+      <a href="#/rounds">
+        <img src={player} className={styles.frontImg} alt="Football player icon" />
+      </a>
       <Footer />
     </div>
   );
