@@ -1,10 +1,10 @@
 import React from 'react';
 
-const gameWinner = (game) => (game.hscore > game.ascore
-  ? (
-    <>
-      <p>
-        <strong>
+const gameWinner = (game) => (
+  game.hscore === game.ascore ? (
+    <p>
+      <>
+        <p>
           {game.hteam}
           {' '}
           {game.hgoals}
@@ -13,24 +13,9 @@ const gameWinner = (game) => (game.hscore > game.ascore
           {' '}
           {game.hscore}
           {' '}
-        </strong>
-      </p>
-      <p>
-        {' '}
-        {game.ateam}
-        {' '}
-        {game.agoals}
-        .
-        {game.abehinds}
-        {' '}
-        {game.ascore}
-      </p>
-    </>
-  )
-  : (
-    <>
-      <p>
-        <strong>
+        </p>
+        <p>
+          {' '}
           {game.ateam}
           {' '}
           {game.agoals}
@@ -38,20 +23,63 @@ const gameWinner = (game) => (game.hscore > game.ascore
           {game.abehinds}
           {' '}
           {game.ascore}
+        </p>
+      </>
+    </p>
+
+  ) : game.hscore > game.ascore
+    ? (
+      <>
+        <p>
+          <strong>
+            {game.hteam}
+            {' '}
+            {game.hgoals}
+            .
+            {game.hbehinds}
+            {' '}
+            {game.hscore}
+            {' '}
+          </strong>
+        </p>
+        <p>
           {' '}
-        </strong>
-      </p>
-      <p>
-        {' '}
-        {game.hteam}
-        {' '}
-        {game.hgoals}
-        .
-        {game.hbehinds}
-        {' '}
-        {game.hscore}
-      </p>
-    </>
-  ));
+          {game.ateam}
+          {' '}
+          {game.agoals}
+          .
+          {game.abehinds}
+          {' '}
+          {game.ascore}
+        </p>
+      </>
+    )
+    : (
+      <>
+        <p>
+          <strong>
+            {game.ateam}
+            {' '}
+            {game.agoals}
+            .
+            {game.abehinds}
+            {' '}
+            {game.ascore}
+            {' '}
+          </strong>
+        </p>
+        <p>
+          {' '}
+          {game.hteam}
+          {' '}
+          {game.hgoals}
+          .
+          {game.hbehinds}
+          {' '}
+          {game.hscore}
+        </p>
+      </>
+    )
+);
 
 export default gameWinner;
