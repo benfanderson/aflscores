@@ -10,10 +10,10 @@ function Rounds() {
   const history = useHistory();
 
   return (
-    <div className="container">
-      <div className="buttonContainer">
+    <div id="container">
+      <div id="buttonContainer">
         {rounds.map((round) => (
-          <button className="littleButton" type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
+          <button className="buttonContainer-button" type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
             {`Round ${round}`}
           </button>
         ))}

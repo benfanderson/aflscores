@@ -26,9 +26,9 @@ function RoundGames(props) {
   return (
     roundArray.length > 0
       ? (
-        <div className="container">
+        <div id="container">
           <h2>{createTitle(roundNumber)}</h2>
-          <div className="gamesContainer">
+          <div id="gamesContainer">
             {
             roundArray.map((game) => (
               <GameTile key={game.id} game={game} />

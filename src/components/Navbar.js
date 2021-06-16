@@ -7,26 +7,26 @@ const Navbar = () => (
   <nav
     role="navigation"
     aria-label="main navigation"
-    className="navbar"
+    id="navbar"
   >
-    <div className="navLinkContainer">
+    <div id="navbar--linksContainer">
       <NavLink
         to="/"
-        className="navlink"
+        className="navbar--link"
       >
         Home
       </NavLink>
 
       <NavLink
         to="/rounds"
-        className="navlink"
+        className="navbar--link"
       >
         Games by Round
       </NavLink>
 
       <NavLink
         to="/clubs"
-        className="navlink"
+        className="navbar--link"
       >
         Games by Club
       </NavLink>

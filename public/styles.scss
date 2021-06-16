@@ -12,39 +12,39 @@ body {
   background-color: rgb(223, 230, 243);
 }
 
-.container {
+#container {
   width: 98%;
   margin: auto;
 }
 
-.navbar {
+#navbar {
   background-color: rgb(75, 75, 247);
   height: 3vh;
   padding: 1vh;
   margin-bottom: 2.5vh;
 }
 
-.navlink{
+.navbar--link{
   color: white;
   text-decoration: none;
   padding: 0 3vw;
 }
 
-.navlink:hover{
+.navbar--link:hover{
   text-decoration: underline;
 }
 
-.headline{
+#headline{
   text-align: center;
 }
 
-.frontImg{
+#frontImg{
   width: 70%;
   margin: 2vh auto;
   display:block;
 }
 
-.buttonContainer {
+#buttonContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
@@ -52,12 +52,12 @@ body {
   margin-bottom: 1.5vh;
 }
 
-.gamesContainer{
+#gamesContainer{
   margin-bottom: 1.5vh;
 }
 
 
-.littleButton {
+.buttonContainer-button {
   width: 48%;
   margin-bottom: 4%;
   font-size: 1.3em;
@@ -76,11 +76,11 @@ body {
 	text-shadow:0px 1px 0px #ffffff;
 }
 
-.littleButton:hover {
+.buttonContainer-button :hover {
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
 	background-color:#f6f6f6;
 }
-.littleButton:active {
+.buttonContainer-button:active {
 	position:relative;
 	top:1px;
 }
@@ -102,7 +102,7 @@ body {
   opacity: 0.5;
 }
 
-.footer{
+#footer{
   text-align: center;
   padding: 1vh 0;
 }
@@ -110,32 +110,32 @@ body {
 /*View for tablet*/
 @media only screen and (min-width: 479px) {
 
-  .navbar {
+  #navbar {
     padding: 0.75vh;
     margin-bottom: 1.5vh;
   }
   
-  .navlink{
+  .navbar--link{
     font-size: 1.3em;
     padding: 0 2vw;
   }
 
-  .headline{
+  #headline{
     font-size: 2.5em;
   }
   
-  .frontImg{
+  #frontImg{
     width: 50%;
   }
 
-  .buttonContainer{
+  #buttonContainer{
     display: grid;
     grid-template-columns: repeat(auto-fill, 29%);
     grid-gap: 1rem;
     justify-content: space-between;
   }
 
-  .gamesContainer{
+  #gamesContainer{
     display: grid;
     grid-template-columns: repeat(auto-fill, 47.5%);
     grid-gap: 1rem;
@@ -143,7 +143,7 @@ body {
   }
 
 
-  .littleButton {
+  .buttonContainer-button {
     width: 100%;
   } 
   
@@ -152,33 +152,33 @@ body {
 /*View for desktop*/
 @media only screen and (min-width: 1000px) {
 
-  .navLinkContainer{
+  #navbar--linksContainer{
     width: 93%;
     margin:auto;
   }
 
-  .navlink{
+  .navbar--link{
     padding: 0 1vw;
   }
 
-  .container{
+  #container{
     width: 90%;
   }
 
-  .headline{
+  #headline{
     font-size: 4em;
   }
   
-  .frontImg{
+  #frontImg{
     width: 40%;
   }
 
-  .buttonContainer{
+  #buttonContainer{
     grid-template-columns: repeat(auto-fill, 15%);
   }
 
 
-  .gamesContainer{
+  #gamesContainer{
     grid-template-columns: repeat(auto-fill, 31%);
   }
   

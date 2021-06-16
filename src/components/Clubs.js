@@ -11,11 +11,11 @@ function Clubs() {
     'North Melbourne', 'Port Adelaide', 'Richmond', 'St Kilda', 'Sydney', 'West Coast', 'Western Bulldogs'];
   const history = useHistory();
   return (
-    <div className="container">
-      <div className="buttonContainer">
+    <div id="container">
+      <div id="buttonContainer">
         {clubs.map((club, index) => (
         // eslint-disable-next-line react/no-array-index-key
-          <button className="ittleButton" type="button" key={index} onClick={() => history.push(`/clubs/${club}`)}>
+          <button className="buttonContainer-button" type="button" key={index} onClick={() => history.push(`/clubs/${club}`)}>
             <img src={clubLogo(club)} alt={`${club} logo`} />
             <p>{club}</p>
           </button>

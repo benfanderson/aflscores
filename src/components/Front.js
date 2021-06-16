@@ -6,10 +6,10 @@ import player from '../../public/images/player.png';
 
 function Front() {
   return (
-    <div className="container">
-      <h1 className="headline">AFL Live scores 2021</h1>
+    <div id="container">
+      <h1 id="headline">AFL Live scores 2021</h1>
       <a href="#/rounds">
-        <img src={player} className="frontImg" alt="Football player icon" />
+        <img src={player} id="frontImg" alt="Football player icon" />
       </a>
       <Footer />
     </div>
