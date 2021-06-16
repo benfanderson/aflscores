@@ -3,15 +3,16 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import clubLogo from '../club_logo';
 import gameWinner from '../game_winner';
-import styles from '../../public/styles.css';
+// import styles from '../../public/styles.css';
+import '../../public/styles.scss';
 
 function GameTile(props) {
   const { game } = props;
   const gameTime = moment(game.date + game.tz).format('dddd, MMMM D h:mma');
   return (
-    <div className={styles.gameTile}>
+    <div className="gameTile">
       <img src={clubLogo(game.hteam)} alt={`${game.hteam} logo`} />
-      <div className={styles.gameInfo}>
+      <div className="gameInfo">
         {game.complete === 0 ? (
           <p>
             {game.hteam}
@@ -40,7 +41,7 @@ function GameTile(props) {
           </p>
         ) : <>{gameWinner(game)}</> }
         <p>{game.venue}</p>
-        <p>{game.complete === 0 ? `${gameTime}` : game.complete < 100 ? <span className={styles.live}>LIVE</span> : null}</p>
+        <p>{game.complete === 0 ? `${gameTime}` : game.complete < 100 ? <span className="live">LIVE</span> : null}</p>
       </div>
       <img src={clubLogo(game.ateam)} alt={`${game.ateam} logo`} />
     </div>

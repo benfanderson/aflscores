@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import GameTile from './GameTile';
-import styles from '../../public/styles.css';
+// import styles from '../../public/styles.css';
+import '../../public/styles.scss';
 import createTitle from '../create_title';
 import Footer from './footer';
 
@@ -25,9 +26,9 @@ function ClubGames(props) {
 
     roundArray.length > 0
       ? (
-        <div className={styles.container}>
+        <div className="container">
           <h2>{createTitle(id)}</h2>
-          <div className={styles.gamesContainer}>
+          <div className="gamesContainer">
             {
               roundArray.map((game) => (
                 <GameTile key={game.id} game={game} />

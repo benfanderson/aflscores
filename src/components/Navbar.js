@@ -1,31 +1,32 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from '../../public/styles.css';
+// import styles from '../../public/styles.css';
+import '../../public/styles.scss';
 
 const Navbar = () => (
   <nav
     role="navigation"
     aria-label="main navigation"
-    className={styles.navbar}
+    className="navbar"
   >
-    <div className={styles.navLinkContainer}>
+    <div className="navLinkContainer">
       <NavLink
         to="/"
-        className={styles.navlink}
+        className="navlink"
       >
         Home
       </NavLink>
 
       <NavLink
         to="/rounds"
-        className={styles.navlink}
+        className="navlink"
       >
         Games by Round
       </NavLink>
 
       <NavLink
         to="/clubs"
-        className={styles.navlink}
+        className="navlink"
       >
         Games by Club
       </NavLink>
