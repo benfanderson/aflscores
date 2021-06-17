@@ -57,7 +57,7 @@ body {
 }
 
 
-.buttonContainer-button {
+.buttonContainer--button {
   width: 48%;
   margin-bottom: 4%;
   font-size: 1.3em;
@@ -76,16 +76,16 @@ body {
 	text-shadow:0px 1px 0px #ffffff;
 }
 
-.buttonContainer-button :hover {
+.buttonContainer--button :hover {
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
 	background-color:#f6f6f6;
 }
-.buttonContainer-button:active {
+.buttonContainer--button:active {
 	position:relative;
 	top:1px;
 }
 
-.gameTile {
+.game {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 2vh;
@@ -143,7 +143,7 @@ body {
   }
 
 
-  .buttonContainer-button {
+  .buttonContainer--button {
     width: 100%;
   } 
   

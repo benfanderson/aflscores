@@ -15,7 +15,7 @@ function Clubs() {
       <div id="buttonContainer">
         {clubs.map((club, index) => (
         // eslint-disable-next-line react/no-array-index-key
-          <button className="buttonContainer-button" type="button" key={index} onClick={() => history.push(`/clubs/${club}`)}>
+          <button className="buttonContainer--button" type="button" key={index} onClick={() => history.push(`/clubs/${club}`)}>
             <img src={clubLogo(club)} alt={`${club} logo`} />
             <p>{club}</p>
           </button>

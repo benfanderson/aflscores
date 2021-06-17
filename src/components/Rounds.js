@@ -13,7 +13,7 @@ function Rounds() {
     <div id="container">
       <div id="buttonContainer">
         {rounds.map((round) => (
-          <button className="buttonContainer-button" type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
+          <button className="buttonContainer--button" type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
             {`Round ${round}`}
           </button>
         ))}

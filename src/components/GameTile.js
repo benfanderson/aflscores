@@ -10,9 +10,9 @@ function GameTile(props) {
   const { game } = props;
   const gameTime = moment(game.date + game.tz).format('dddd, MMMM D h:mma');
   return (
-    <div className="gameTile">
+    <div className="game">
       <img src={clubLogo(game.hteam)} alt={`${game.hteam} logo`} />
-      <div className="gameInfo">
+      <div className="game--info">
         {game.complete === 0 ? (
           <p>
             {game.hteam}
