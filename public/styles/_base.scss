@@ -12,6 +12,14 @@ body {
   background-color: rgb(223, 230, 243);
 }
 
+@media(prefers-color-scheme: dark) {
+  body{
+    background: rgb(34, 40, 49);
+    color: rgb(221, 221, 221);
+  }
+  
+}
+
 #container {
   width: 98%;
   margin: auto;

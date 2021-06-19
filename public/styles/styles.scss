@@ -61,11 +61,43 @@
   padding: 1vw;
 }
 
+
+
 .live{
   color: rgb(238, 86, 99);
-  animation: pulsate 1.5s ease-out;         
-  animation-iteration-count: infinite;
-  opacity: 0.5;
+  // animation: pulsate 1.5s ease-out;         
+  // animation-iteration-count: infinite;
+  // opacity: 0.5;
+}
+
+@media(prefers-color-scheme: dark) {
+  #buttonContainer{
+    button{
+      background: rgb(48, 71, 94) ;
+      border:1px solid rgb(38, 55, 73);
+      box-shadow:inset 0px 1px 0px 0px rgb(48, 71, 94) ;
+      background:linear-gradient(to bottom, rgb(48, 71, 94) 5%, rgb(39, 57, 77) 100%);
+      color: rgb(221, 221, 221);
+      text-shadow: none
+    }
+
+    button:hover {
+      background:linear-gradient(to bottom, rgb(39, 57, 77)5%, rgb(48, 71, 94) 100%);
+      background-color:rgb(39, 57, 77);
+    }
+    
+  }
+  .game{
+    background: rgb(48, 71, 94);
+  }
+
+  .live{
+    color: rgb(240, 84, 84)
+  }
+
+  a:visited {
+    color: rgb(199, 102, 199);
+  }
 }
 
 /*View for tablet*/

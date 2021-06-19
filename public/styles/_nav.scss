@@ -6,6 +6,12 @@
     padding: 1vh;
     margin-bottom: 2.5vh;
 }
+
+@media(prefers-color-scheme: dark) {
+    #navbar{
+      background: rgb(48, 71, 94);
+    }
+  }
   
 .navbar--link{
     color: white;
@@ -15,6 +21,13 @@
 
 .navbar--link:hover{
     text-decoration: underline;
+}
+
+@media(prefers-color-scheme: dark) {
+    .navbar--link:visited {
+        color: rgb(221, 221, 221);
+    }
+
 }
 
 @media only screen and (min-width: 479px) {
