@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 // import styles from '../../public/styles.css';
-import '../../public/styles.scss';
+import '../../public/styles/styles.scss';
 import Footer from './footer';
 
 function Rounds() {
@@ -13,7 +13,7 @@ function Rounds() {
     <div id="container">
       <div id="buttonContainer">
         {rounds.map((round) => (
-          <button className="buttonContainer--button" type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
+          <button type="button" key={round} onClick={() => history.push(`/rounds/${round}`)}>
             {`Round ${round}`}
           </button>
         ))}

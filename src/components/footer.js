@@ -1,6 +1,6 @@
 import React from 'react';
 // import styles from '../../public/styles.css';
-import '../../public/styles.scss';
+import '../../public/styles/styles.scss';
 
 function Footer() {
   return (

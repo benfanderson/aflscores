@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 // import styles from '../../public/styles.css';
-import '../../public/styles.scss';
+import '../../public/styles/styles.scss';
 import GameTile from './GameTile';
 import createTitle from '../create_title';
 import Footer from './footer';

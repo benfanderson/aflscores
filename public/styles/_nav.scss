@@ -1,0 +1,42 @@
+@use 'base';
+
+#navbar {
+    background-color: rgb(75, 75, 247);
+    height: 3vh;
+    padding: 1vh;
+    margin-bottom: 2.5vh;
+}
+  
+.navbar--link{
+    color: white;
+    text-decoration: none;
+    padding: 0 3vw;
+}
+
+.navbar--link:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 479px) {
+    #navbar {
+        padding: 0.75vh;
+        margin-bottom: 1.5vh;
+    }
+    
+    .navbar--link{
+        font-size: 1.3em;
+        padding: 0 2vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #navbar--linksContainer{
+      width: 93%;
+      margin:auto;
+    }
+  
+    .navbar--link{
+      padding: 0 1vw;
+    }
+}

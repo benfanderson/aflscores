@@ -7,6 +7,7 @@ import ClubGames from './ClubGames';
 import Rounds from './Rounds';
 import Clubs from './Clubs';
 import Navbar from './Navbar';
+import '../../public/styles/_base.scss';
 
 const ENDPOINT = 'https://afl-server.herokuapp.com/';
 

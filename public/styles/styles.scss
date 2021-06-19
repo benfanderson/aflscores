@@ -1,0 +1,125 @@
+@use 'base';
+
+#headline{
+  text-align: center;
+}
+
+#frontImg{
+  width: 70%;
+  margin: 2vh auto;
+  display:block;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-top: 2%;
+  margin-bottom: 1.5vh;
+
+  button {
+    width: 48%;
+    margin-bottom: 4%;
+    font-size: 1.3em;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-weight:bold;
+    padding:10px 30px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+
+  button:hover {
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color:#f6f6f6;
+  }
+
+  button:active {
+    position:relative;
+    top:1px;
+  }
+}
+
+#gamesContainer{
+  margin-bottom: 1.5vh;
+}
+
+.game {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 2vh;
+  text-align: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 1vw;
+}
+
+.live{
+  color: rgb(238, 86, 99);
+  animation: pulsate 1.5s ease-out;         
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+
+/*View for tablet*/
+@media only screen and (min-width: 479px) {
+
+  #headline{
+    font-size: 2.5em;
+  }
+  
+  #frontImg{
+    width: 50%;
+  }
+
+  #buttonContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 29%);
+    grid-gap: 1rem;
+    justify-content: space-between;
+
+    button {
+      width: 100%;
+    } 
+  }
+
+  #gamesContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 47.5%);
+    grid-gap: 1rem;
+    justify-content: space-between;
+  }
+  
+}
+
+/*View for desktop*/
+@media only screen and (min-width: 1000px) {
+
+  #container{
+    width: 90%;
+  }
+
+  #headline{
+    font-size: 4em;
+  }
+  
+  #frontImg{
+    width: 40%;
+  }
+
+  #buttonContainer{
+    grid-template-columns: repeat(auto-fill, 15%);
+  }
+
+  #gamesContainer{
+    grid-template-columns: repeat(auto-fill, 31%);
+  }
+  
+}
