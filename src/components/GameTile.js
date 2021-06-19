@@ -34,7 +34,7 @@ function GameTile(props) {
             {game.ateam}
             {' '}
             {game.agoals}
-            .$
+            .
             {game.abehinds}
             {' '}
             {game.ascore}
