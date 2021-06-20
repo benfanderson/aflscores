@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-// import styles from '../../public/styles.css';
 import '../../public/styles/styles.scss';
 import clubLogo from '../club_logo';
 import Footer from './footer';

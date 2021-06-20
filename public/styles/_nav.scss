@@ -1,17 +1,15 @@
 @use 'base';
 
+$element--light: rgb(75, 75, 247);
+$element--dark: rgb(48, 71, 94);
+$text--dark: rgb(221, 221, 221);
+
 #navbar {
-    background-color: rgb(75, 75, 247);
-    height: 3vh;
+    background-color: $element--light;
     padding: 1vh;
     margin-bottom: 2.5vh;
 }
 
-@media(prefers-color-scheme: dark) {
-    #navbar{
-      background: rgb(48, 71, 94);
-    }
-  }
   
 .navbar--link{
     color: white;
@@ -24,8 +22,12 @@
 }
 
 @media(prefers-color-scheme: dark) {
+    #navbar{
+        background: $element--dark;
+    }
+
     .navbar--link:visited {
-        color: rgb(221, 221, 221);
+        color: $text--dark;
     }
 
 }

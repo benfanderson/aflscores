@@ -1,5 +1,14 @@
 @use 'base';
 
+$button--light: #ffffff;
+$button--light_gradient: #f6f6f6;
+$button--dark: rgb(48, 71, 94);
+$button--dark_graident: rgb(39, 57, 77);
+$button_border: #dcdcdc;
+$button_text: #666666;
+$live-score: rgb(238, 86, 99);
+$live-score--dark: rgb(240, 84, 84);
+
 #headline{
   text-align: center;
 }
@@ -21,24 +30,21 @@
     width: 48%;
     margin-bottom: 4%;
     font-size: 1.3em;
-    box-shadow:inset 0px 1px 0px 0px #ffffff;
-    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-    background-color:#ffffff;
+    box-shadow:inset 0px 1px 0px 0px $button--light;
+    background:linear-gradient(to bottom, $button--light 5%, $button--light_gradient 100%);
     border-radius:6px;
-    border:1px solid #dcdcdc;
+    border:1px solid $button_border;
     display:inline-block;
     cursor:pointer;
-    color:#666666;
+    color:$button_text;
     font-family:Arial;
     font-weight:bold;
     padding:10px 30px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff;
   }
 
   button:hover {
-    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-    background-color:#f6f6f6;
+    background:linear-gradient(to bottom, $button--light_gradient 5%, $button--light 100%);
   }
 
   button:active {
@@ -64,10 +70,7 @@
 
 
 .live{
-  color: rgb(238, 86, 99);
-  // animation: pulsate 1.5s ease-out;         
-  // animation-iteration-count: infinite;
-  // opacity: 0.5;
+  color: $live-score
 }
 
 @media(prefers-color-scheme: dark) {
@@ -76,13 +79,13 @@
       background: rgb(48, 71, 94) ;
       border:1px solid rgb(38, 55, 73);
       box-shadow:inset 0px 1px 0px 0px rgb(48, 71, 94) ;
-      background:linear-gradient(to bottom, rgb(48, 71, 94) 5%, rgb(39, 57, 77) 100%);
+      background:linear-gradient(to bottom, $button--dark 5%, $button--dark_graident 100%);
       color: rgb(221, 221, 221);
       text-shadow: none
     }
 
     button:hover {
-      background:linear-gradient(to bottom, rgb(39, 57, 77)5%, rgb(48, 71, 94) 100%);
+      background:linear-gradient(to bottom, $button--dark_graident, $button--dark 100%);
       background-color:rgb(39, 57, 77);
     }
     
@@ -92,7 +95,7 @@
   }
 
   .live{
-    color: rgb(240, 84, 84)
+    color: $live-score--dark;
   }
 
   a:visited {

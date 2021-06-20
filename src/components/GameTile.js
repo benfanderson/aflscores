@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import clubLogo from '../club_logo';
 import gameWinner from '../game_winner';
-// import styles from '../../public/styles.css';
 import '../../public/styles/styles.scss';
 
 function GameTile(props) {

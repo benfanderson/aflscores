@@ -3,19 +3,23 @@
     padding: 0;
 }
 
+$background--light: rgb(223, 230, 243);
+$background--dark: rgb(34, 40, 49);
+$text--dark: rgb(221, 221, 221);
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(223, 230, 243);
+  background-color: $background--light
 }
 
 @media(prefers-color-scheme: dark) {
   body{
-    background: rgb(34, 40, 49);
-    color: rgb(221, 221, 221);
+    background: $background--dark;
+    color: $text--dark;
   }
   
 }
