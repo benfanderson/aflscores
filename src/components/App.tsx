@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Switch, Route, HashRouter } from 'react-router-dom';
+import { hot } from 'react-hot-loader/root';
 import socketIOClient from 'socket.io-client';
 import Front from './Front';
 import RoundGames from './RoundGames';
@@ -9,6 +10,8 @@ import Clubs from './Clubs';
 import Navbar from './Navbar';
 import '../../public/styles/_base.scss';
 
+type GamesProp = { games:  {date: string, tz: string, hteam: string, hgoals: number, hbehinds: number, hscore: number, ateam: string, agoals: number, abehinds: number, ascore: number, complete: number, venue: string, round: number, id: number}[]}
+
 const ENDPOINT = 'https://afl-server.herokuapp.com/';
 
 function App() {
@@ -16,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const socket = socketIOClient(ENDPOINT);
-    socket.on('liveScores', (data) => {
+    socket.on('liveScores', (data: React.SetStateAction<string>) => {
       setLiveScores(data);
     });
   }, []);
@@ -35,12 +38,12 @@ function App() {
           <Route exact path="/clubs">
             <Clubs />
           </Route>
-          <Route path="/rounds/:id"><RoundGames games={liveScores} /></Route>
-          <Route path="/clubs/:id"><ClubGames games={liveScores} /></Route>
+          <Route path="/rounds/:URLid"><RoundGames games={liveScores} /></Route>
+          <Route path="/clubs/:URLid"><ClubGames games={liveScores} /></Route>
         </Switch>
       </HashRouter>
     </>
   );
 }
 
-export default App;
+export default hot(App);

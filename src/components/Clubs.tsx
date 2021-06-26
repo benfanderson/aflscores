@@ -1,8 +1,9 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import '../../public/styles/styles.scss';
-import clubLogo from '../club_logo';
 import Footer from './footer';
+
+const clubLogo = require('../club_logo');
 
 function Clubs() {
   const clubs = ['Adelaide', 'Brisbane Lions', 'Carlton', 'Collingwood', 'Essendon',

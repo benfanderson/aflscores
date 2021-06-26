@@ -1,23 +1,23 @@
-import AdelaideCrows from '../public/images/AdelaideCrows.svg';
-import BrisbaneLions from '../public/images/BrisbaneLions.svg';
-import Carlton from '../public/images/Carlton.svg';
-import Collingwood from '../public/images/Collingwood.svg';
-import Essendon from '../public/images/Essendon.svg';
-import Fremantle from '../public/images/Fremantle.svg';
-import Geelong from '../public/images/GeelongCats.svg';
-import GoldCoast from '../public/images/GoldCoastSuns.svg';
-import GreaterWesternSydney from '../public/images/GWSGiants.svg';
-import Hawthorn from '../public/images/Hawthorn.svg';
-import Melbourne from '../public/images/Melbourne.svg';
-import NorthMelbourne from '../public/images/NorthMelbourne.svg';
-import PortAdelaide from '../public/images/PortAdelaide.svg';
-import Richmond from '../public/images/Richmond.svg';
-import StKilda from '../public/images/StKilda.svg';
-import SydneySwans from '../public/images/SydneySwans.svg';
-import WestCoastEagles from '../public/images/WestCoastEagles.svg';
-import WesternBulldogs from '../public/images/WesternBulldogs.svg';
+const AdelaideCrows = require('../public/images/AdelaideCrows.svg');
+const BrisbaneLions = require('../public/images/BrisbaneLions.svg');
+const Carlton = require('../public/images/Carlton.svg');
+const Collingwood = require('../public/images/Collingwood.svg');
+const Essendon = require('../public/images/Essendon.svg');
+const Fremantle = require('../public/images/Fremantle.svg');
+const Geelong = require('../public/images/GeelongCats.svg');
+const GoldCoast = require('../public/images/GoldCoastSuns.svg');
+const GreaterWesternSydney = require('../public/images/GWSGiants.svg');
+const Hawthorn = require('../public/images/Hawthorn.svg');
+const Melbourne = require('../public/images/Melbourne.svg');
+const NorthMelbourne = require('../public/images/NorthMelbourne.svg');
+const PortAdelaide = require('../public/images/PortAdelaide.svg');
+const Richmond = require('../public/images/Richmond.svg');
+const StKilda = require('../public/images/StKilda.svg');
+const SydneySwans = require('../public/images/SydneySwans.svg');
+const WestCoastEagles = require('../public/images/WestCoastEagles.svg');
+const WesternBulldogs = require('../public/images/WesternBulldogs.svg');
 
-function clubLogo(club) {
+function clubLogo(club: string) {
   if (club === 'Adelaide') {
     const logo = AdelaideCrows;
     return logo;

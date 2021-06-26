@@ -6,12 +6,14 @@ import GameTile from './GameTile';
 import createTitle from '../create_title';
 import Footer from './footer';
 
-function RoundGames(props) {
+type GamesProp = { games:  {date: string, tz: string, hteam: string, hgoals: number, hbehinds: number, hscore: number, ateam: string, agoals: number, abehinds: number, ascore: number, complete: number, venue: string, round: number, id: number}[]}
+
+function RoundGames(props: GamesProp) {
   const { games } = props;
   const bulkGamesArray = Array.from(games);
-  const { id } = useParams();
-  const roundNumber = parseInt(id, 10);
-  const roundArray = [];
+  const { URLid } = useParams<{URLid:string}>();
+  const roundNumber = parseInt(URLid, 10);
+  const roundArray: { date: string; tz: string; hteam: string; hgoals: number; hbehinds: number; hscore: number; ateam: string; agoals: number; abehinds: number; ascore: number; complete: number; venue: string; id:number }[] = [];
 
   bulkGamesArray.map(
     // eslint-disable-next-line array-callback-return

@@ -1,6 +1,7 @@
 import React from 'react';
 
-const gameWinner = (game) => (
+const gameWinner = (game: { hscore: number; ascore: number; hteam: string; hgoals: number;
+  hbehinds: number; ateam: string; agoals: number; abehinds: number; }) => (
   game.hscore === game.ascore ? (
     <p>
       <>
