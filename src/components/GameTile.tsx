@@ -5,6 +5,7 @@ import clubLogo from '../club_logo';
 import gameWinner from '../game_winner';
 import '../../public/styles/styles.scss';
 
+// eslint-disable-next-line max-len
 function GameTile(props: { game: {date: string, tz: string, hteam: string, hgoals: number, hbehinds: number, hscore: number, ateam: string, agoals: number, abehinds: number, ascore: number, complete: number, venue: string}}) {
   const { game } = props;
   const gameTime = moment(game.date + game.tz).format('dddd, MMMM D h:mma');

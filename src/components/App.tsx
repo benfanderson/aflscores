@@ -10,16 +10,22 @@ import Clubs from './Clubs';
 import Navbar from './Navbar';
 import '../../public/styles/_base.scss';
 
-type GamesProp = { games:  {date: string, tz: string, hteam: string, hgoals: number, hbehinds: number, hscore: number, ateam: string, agoals: number, abehinds: number, ascore: number, complete: number, venue: string, round: number, id: number}[]}
+// type GamesProp = { games:
+//   {date: string, tz: string, hteam: string, hgoals: number,
+//     hbehinds: number, hscore: number, ateam: string, agoals: number,
+//     abehinds: number, ascore: number, complete: number, venue: string,
+//     round: number, id: number
+//   }[]
+// }
 
 const ENDPOINT = 'https://afl-server.herokuapp.com/';
 
 function App() {
-  const [liveScores, setLiveScores] = useState('');
+  const [liveScores, setLiveScores] = useState([]);
 
   useEffect(() => {
     const socket = socketIOClient(ENDPOINT);
-    socket.on('liveScores', (data: React.SetStateAction<string>) => {
+    socket.on('liveScores', (data) => {
       setLiveScores(data);
     });
   }, []);

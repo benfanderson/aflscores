@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../public/styles/styles.scss';
 import Footer from './footer';
+
 const player = require('../../public/images/player.png');
 
 function Front() {

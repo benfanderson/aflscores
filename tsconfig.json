@@ -21,7 +21,8 @@
         "jsx": "react-jsx",
     },
     "include": [
-        "src"
+        "src",
+        "public"
     ],
     "exclude": [
         "./dist/**/*" // This is what fixed it!
