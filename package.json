@@ -9,6 +9,20 @@
     "build": "npm test && webpack --config ./webpack.config.js --mode production",
     "lint": "eslint --fix --ext .js,.jsx ."
   },
+  "jest": {
+    "transform": {
+      "^.+\\.svg$": "<rootDir>/svgTransform.js",
+      "^.+\\.(ts|tsx)?$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benfanderson/aflscores.git"
@@ -46,7 +60,9 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@types/jest": "^26.0.24",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
@@ -64,6 +80,7 @@
     "react-hot-loader": "^4.13.0",
     "style-loader": "^2.0.0",
     "svg-url-loader": "^7.1.1",
+    "ts-jest": "^27.0.4",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^3.11.1"
