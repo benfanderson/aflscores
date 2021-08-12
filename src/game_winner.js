@@ -12,11 +12,9 @@ const gameWinner = (game) => (game.hscore > game.ascore
           {game.hbehinds}
           {' '}
           {game.hscore}
-          {' '}
         </strong>
       </p>
       <p>
-        {' '}
         {game.ateam}
         {' '}
         {game.agoals}
@@ -38,11 +36,9 @@ const gameWinner = (game) => (game.hscore > game.ascore
           {game.abehinds}
           {' '}
           {game.ascore}
-          {' '}
         </strong>
       </p>
       <p>
-        {' '}
         {game.hteam}
         {' '}
         {game.hgoals}
